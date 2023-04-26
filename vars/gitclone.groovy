@@ -1,6 +1,6 @@
 def call(String repoLink, String branchName) 
 {    
-    git branch: "${branchName}", url: "${repoLink}"
+    git branch: "${branchName}",credentialsId: "${Gitid}", url: "${repoLink}"
         
         
           }
