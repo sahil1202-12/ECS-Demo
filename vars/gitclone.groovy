@@ -1,6 +1,6 @@
-def call(String jenkinsSecret, String repoLink, String branchName) 
+def call(String repoLink, String branchName) 
 {    
-    git branch: "${branchName}", credentialsId: "${jenkinsSecret}", url: "${repoLink}"
+    git branch: "${branchName}", url: "${repoLink}"
         
         
           }
